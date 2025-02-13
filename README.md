@@ -7,8 +7,8 @@
 - **코딩 테스트 대비 및 실력 향상**  
 
 ## 🛠 사용 플랫폼  
-- **백준(BOJ)**: [acmicpc.net](https://www.acmicpc.net/)  
-- **인프런 강의**: [inflearn.com](https://www.inflearn.com/)  
+- **백준**: [acmicpc.net](https://www.acmicpc.net/)  
+- **인프런**: [inflearn.com](https://www.inflearn.com/)  
 
 ## 📅 진행 방식  
 **문제 풀이 후 코드 및 풀이 과정 정리**  
