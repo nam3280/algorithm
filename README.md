@@ -8,7 +8,6 @@
 
 ## 🛠 사용 플랫폼  
 - **백준(BOJ)**: [acmicpc.net](https://www.acmicpc.net/)  
-- **프로그래머스**: [programmers.co.kr](https://programmers.co.kr/)  
 - **인프런 강의**: [inflearn.com](https://www.inflearn.com/)  
 
 ## 📅 진행 방식  
