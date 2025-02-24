@@ -44,10 +44,7 @@ public class 백준1236 {
                 missheight++;
         }
 
-        if(missWidth > missheight)
-            System.out.println(missWidth);
-        else
-            System.out.println(missheight);
+        System.out.println(Math.max(missWidth, missheight));
     }
 }
 
