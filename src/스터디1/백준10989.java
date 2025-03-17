@@ -1,7 +1,6 @@
 package 스터디1;
 
 import java.io.*;
-import java.util.*;
 
 public class 백준10989 {
     public static void main(String[] args) throws IOException {
@@ -9,26 +8,26 @@ public class 백준10989 {
         int num = Integer.parseInt(br.readLine());
 
         int[] arr = new int[num];
+        int[] countArr = new int[10001];
+        int[] answerArr = new int[num];
 
-        StringTokenizer token = new StringTokenizer(br.readLine(), " ");
-
-        for (int i = 0; i < arr.length; i++)
-            arr[i] = Integer.parseInt(token.nextToken());
-
-        int x = Integer.parseInt(br.readLine());
-
-        HashSet<Integer> set = new HashSet<>();
-
-        int count = 0;
         for (int i = 0; i < arr.length; i++) {
-            int cal = x - arr[i];
-
-            if (set.contains(cal))
-                count++;
-
-            set.add(arr[i]);
+            arr[i] = Integer.parseInt(br.readLine());
+            countArr[arr[i]]++;
         }
 
-        System.out.println(count);
+        for (int i = 1; i < countArr.length; i++)
+            countArr[i] += countArr[i - 1];
+
+        for (int i = arr.length - 1; i >= 0; i--) {
+            answerArr[countArr[arr[i]] - 1] = arr[i];
+            countArr[arr[i]]--;
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (int x : answerArr)
+            sb.append(x).append("\n");
+
+        System.out.print(sb);
     }
 }
