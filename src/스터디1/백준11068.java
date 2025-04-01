@@ -8,7 +8,7 @@ public class 백준11068 {
 
         int T = Integer.parseInt(br.readLine());
 
-        char[] arr = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+/".toCharArray();
+        char[] arr = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_'abcdefghijklmnopqrstuvwxyz".toCharArray();
 
         StringBuilder result = new StringBuilder();
 
@@ -25,12 +25,7 @@ public class 백준11068 {
                 StringBuilder sb1 = new StringBuilder();
                 StringBuilder sb2 = new StringBuilder();
 
-                if(data == 0){
-                    sb1.append(0);
-                    sb2.append(0);
-                }
-
-                while(data > 1) {
+                while(data > 0) {
                     sb1.insert(0, arr[data % j]);
                     sb2.append(arr[data % j]);
                     data /= j;

@@ -29,7 +29,17 @@ public class 백준2840 {
             int S = Integer.parseInt(input2[0]);
             char next = input2[1].charAt(0);
 
-            rotate = (rotate - S % N + N) % N;
+            rotate = (rotate - S + N) % N;
+
+            if (rotate < 0)
+                rotate += N;
+
+            // 1. 현재 위치에 왼쪽 방향으로 룰렛이 돌아가는 만큼(S) 빼준다.
+            // 더하면 오른쪽인데 예제 출력을 보니 왼쪽으로 돌아가는 듯
+            // 2. 음수가 될 수 있으므로 +N을 한다.
+            // 3. N보다 커질 수 있기 때문에 %N을 한다.
+            // 4. 만약 글자가 바뀐 수가 매우 크고(룰렛 칸이 변하는 수 = S) 현 위치가 매우 작을 때(rotate)
+            // rotate가 음수가 나올 수 있어 한 번 더 +N을 해준다.
 
             if(arr[rotate] != '?' && arr[rotate] != next){
                 check = true;
