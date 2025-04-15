@@ -42,7 +42,7 @@ public class 백준2817 {
         for (Character c : map.keySet())
             sb.append(c).append(" ").append(map.get(c)).append("\n");
 
-        System.out.println(sb.toString().trim());
+        System.out.println(sb);
     }
 
     static class Data {
