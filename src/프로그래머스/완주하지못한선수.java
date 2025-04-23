@@ -6,7 +6,7 @@ public class 완주하지못한선수 {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
 
-        Map<String, Integer> map = new HashMap<String, Integer>();
+        Map<String, Integer> map = new HashMap<>();
 
         for (String s : participant)
             map.put(s, map.getOrDefault(s, 0) + 1);
