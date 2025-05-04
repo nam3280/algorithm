@@ -1,4 +1,4 @@
-package 인프런;
+package 인프런.s1;
 
 import java.io.*;
 

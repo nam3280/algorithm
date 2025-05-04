@@ -1,4 +1,4 @@
-package 인프런;
+package 인프런.s2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
