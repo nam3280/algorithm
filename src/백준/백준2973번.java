@@ -1,4 +1,4 @@
-package 스터디2;
+package 백준;
 
 import java.io.*;
 
