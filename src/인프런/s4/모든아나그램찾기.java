@@ -1,8 +1,6 @@
 package 인프런.s4;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Scanner;
 
 public class 모든아나그램찾기 {
